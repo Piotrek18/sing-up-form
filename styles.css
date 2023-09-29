@@ -1,0 +1,7 @@
+.container{
+    display: flex;
+}
+
+.image-side{
+    background-image: url("./background.jpg");
+}
