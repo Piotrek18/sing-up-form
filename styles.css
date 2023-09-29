@@ -1,7 +1,36 @@
-.container{
-    display: flex;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.image-side{
-    background-image: url("./background.jpg");
+.container {
+    display: flex;
+    height: 100vh;
 }
+
+.image-side {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-side {
+    flex: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-section {
+    max-width: 400px; /* Maksymalna szerokość formularza */
+    margin: 0 auto; /* Centrowanie formularza */
+}
+
