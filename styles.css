@@ -3,7 +3,11 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
+ 
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./Norse-Bold.otf);
+}
 .container {
     display: flex;
     height: 100vh;
@@ -13,14 +17,41 @@ body {
     flex: 1;
     position: relative;
     overflow: hidden;
+    background: url('background.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+    box-sizing: border-box;
 }
 
-.image-side img {
+.image-overlay {
+    background-color: rgba(0, 0, 0, 0.411);
     width: 100%;
+    margin-top: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-overlay img {
+    width: 100px; /* Ustaw szerokość logo zgodnie z wymaganiami */
     height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-right: 10px;
+}
+
+.image-overlay h1 {
+    color: white;
+    font-family: "Norse Bold";
+    font-size: 90px;
+    margin: 0;
+}
+
+.image-side p {
+    margin: 0; /* Usuwamy domyślne marginesy dla paragrafów */
 }
 
 .form-side {
@@ -34,3 +65,12 @@ body {
     margin: 0 auto; /* Centrowanie formularza */
 }
 
+.image-footer{
+ display: flex;
+ color: white;
+ margin-bottom: 15px;
+}
+
+.image-footer a:link {
+color: white;
+}
