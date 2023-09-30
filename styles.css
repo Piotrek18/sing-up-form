@@ -69,8 +69,16 @@ body {
 }
 
 .form-section {
-    max-width: 400px; /* Maksymalna szerokość formularza */
-    margin: 0 auto; /* Centrowanie formularza */
+    background-color: #727272;
+}
+
+.form-section > div {
+    display: flex;
+    
+}
+
+label{
+    display: block;
 }
 
 .image-footer{
