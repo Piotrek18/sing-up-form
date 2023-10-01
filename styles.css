@@ -65,7 +65,7 @@ body {
 
 input:focus{
     outline: none; /*removes default focus*/
-    border: 2px solid rgb(43, 82, 255); 
+    border: 1px solid #215cffe7; 
 }
 
 input{
@@ -142,4 +142,8 @@ color: white;
     text-decoration: none;
     font-weight: bolder;
     color: #596D48;
+}
+
+input:invalid{
+    border: 1px solid red;
 }
