@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
  
 @font-face {
@@ -59,7 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    background-color: #f8f8f8;
     box-sizing: border-box;
 }
 
@@ -69,7 +69,9 @@ body {
 }
 
 .form-section {
-    background-color: #727272;
+    background-color: white;
+    box-shadow: 0px 14px 20px -4px rgba(169, 169, 169, 1);
+    padding: 50px;
 }
 
 .form-section > div {
@@ -81,6 +83,16 @@ label{
     display: block;
 }
 
+#create-account{
+    background-color: #596D48;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+    padding: 15px 45px;
+    border: none;
+}
+
 .image-footer{
  display: flex;
  color: white;
@@ -89,4 +101,9 @@ label{
 
 .image-footer a:link {
 color: white;
+}
+
+.log-in a:link{
+    text-decoration: none;
+    color: #596D48;
 }
